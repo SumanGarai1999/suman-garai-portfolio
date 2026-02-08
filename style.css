@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0d1117; /* dark background */
+  color: #c9d1d9;      /* light text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #161b22;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #8b949e;
+}
+
+/* Navigation */
+nav {
+  background: #161b22;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #c9d1d9;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #58a6ff;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.5rem;
+}
+
+/* Cards (Skills, Certs) */
+.skills, .certs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #1f2937;
+}
+
+/* Footer */
+footer {
+  background: #161b22;
+  color: #8b949e;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+}
